@@ -1,14 +1,13 @@
 <template>
     <div>
       <img class="logo" src="../assets/default.png" alt="image" />
-      <h1>Sign Up</h1>
-      <div class="SignUp">
+      <h1>Login</h1>
+      <div class="login">
         <input type="text" placeholder="Enter Name" />
-        <input type="text" placeholder="Enter Email" />
         <input type="password" placeholder="Enter Password" />
-        <button class="buttonSignUp" @click="goToHome">Sign Up</button>
+        <button class="buttonLogin" @click="goToHome">Login</button>
         <p>
-            <router-link to="/Login"> Login </router-link>
+            <router-link to="/SignUp"> Sign Up </router-link>
         </p>
       </div>
     </div>
@@ -17,8 +16,9 @@
   <script>
   import { useRouter } from 'vue-router';
   import '@/assets/styles.css';
+  
   export default {
-    name: 'SignUp',
+    name: 'Login',
     setup() {
       const router = useRouter();
   
@@ -30,4 +30,4 @@
     },
   };
   </script>
-  
+

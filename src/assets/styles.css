@@ -1,0 +1,84 @@
+/* LOGIN PAGE  */
+.logo {
+    width: 35%;
+    height: auto;
+  }
+  
+  .login input {
+    width: 300px;
+    height: 40px;
+    padding-left: 20px;
+    display: block;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid skyblue;
+  }
+  
+  .buttonLogin {
+    width: 320px;
+    height: 40px;
+    border: 1px solid skyblue;
+    background-color: skyblue;
+    color: #fff;
+    font-size: large;
+    cursor: pointer;
+    transition: background-color 1s;
+  }
+  
+  .buttonLogin:hover {
+    background-color: rgb(28, 85, 107);
+  }
+
+  /* Sign Up  */
+  .SignUp input {
+    width: 300px;
+    height: 40px;
+    padding-left: 20px;
+    display: block;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid skyblue;
+  }
+  
+  .buttonSignUp {
+    width: 320px;
+    height: 40px;
+    border: 1px solid skyblue;
+    background-color: skyblue;
+    color: #fff;
+    font-size: large;
+    cursor: pointer;
+    transition: background-color 1s;
+  }
+  
+  .buttonSignUp:hover {
+    background-color: rgb(28, 85, 107);
+  }
+
+  /* Nav (header) */
+  .nav{
+    background-color: skyblue;
+    overflow: hidden;
+  }
+
+.nav a {
+    float: left;
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 50;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.nav a:hover{
+    background: rgb(28, 85, 107);
+    color: #fdfdfd;
+}
+
+  .body{
+    padding: 0;
+    margin: 0;
+  }
