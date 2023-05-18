@@ -8,7 +8,7 @@
         <input type="password" placeholder="Enter Password" />
         <button class="buttonSignUp" @click="goToHome">Sign Up</button>
         <p>
-            <router-link to="/Login"> Login </router-link>
+            <router-link to="/"> Login </router-link>
         </p>
       </div>
     </div>
