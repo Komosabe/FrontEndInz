@@ -1,26 +1,40 @@
 <template>
-    <img class="logo" src="../assets/default.png" alt="image" />
-    <h1> Sign Up</h1>
-    <div class="register">
+    <div>
+      <img class="logo" src="../assets/default.png" alt="image" />
+      <h1>Sign Up</h1>
+      <div class="register">
         <input type="text" placeholder="Enter Name" />
         <input type="text" placeholder="Enter Email" />
         <input type="password" placeholder="Enter Password" />
-        <button> Sign Up</button>
+        <button @click="goToHome">Sign Up</button>
+      </div>
     </div>
-</template>
-
-<script>
-export default {
-    name: 'SignUp'
-}
-</script>
-
-<style>
-.logo {
-  width: 35%; /* Przykładowa wartość - do dostosowania*/
-  height: 35; /* Aby wysokość była proporcjonalna */
-}
-.register input {
+  </template>
+  
+  <script>
+  import { useRouter } from 'vue-router';
+  
+  export default {
+    name: 'SignUp',
+    setup() {
+      const router = useRouter();
+  
+      const goToHome = () => {
+        router.push({ name: 'Home' });
+      };
+  
+      return { goToHome };
+    },
+  };
+  </script>
+  
+  <style>
+  .logo {
+    width: 35%;
+    height: auto;
+  }
+  
+  .register input {
     width: 300px;
     height: 40px;
     padding-left: 20px;
@@ -29,8 +43,9 @@ export default {
     margin-right: auto;
     margin-left: auto;
     border: 1px solid skyblue;
-}
-.register button {
+  }
+  
+  .register button {
     width: 320px;
     height: 40px;
     border: 1px solid skyblue;
@@ -38,5 +53,5 @@ export default {
     color: #fff;
     font-size: large;
     cursor: pointer;
-}
-</style>
+  }
+  </style>
