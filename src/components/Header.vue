@@ -1,10 +1,10 @@
 <template>
     <div class="nav">
-        <a href="#"> Home </a>
-        <a href="#"> Dashboard </a>
-        <a href="#"> Calendar </a>
-        <a href="#"> Statistics </a>
-        <a v-on:click="logout" href="#"> Logout </a>
+        <router-link to="/Home"> Home </router-link>
+        <router-link to="/Dashboard"> Dashboard </router-link>
+        <router-link to="/Calendar"> Calendar </router-link>
+        <router-link to="/Statistics"> Statistics </router-link>
+        <a v-on:click="logout" href="/"> Logout </a>
     </div>
 </template>
 

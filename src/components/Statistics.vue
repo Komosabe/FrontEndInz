@@ -1,14 +1,14 @@
 <template>
     <Sidebar />
-    estsetstesetsetsetste
+    <h1> testestestseste </h1>
 </template>
 
 <script>
 import Sidebar from './Sidebar.vue'
-export default {
-    name: 'Home',
+export default{
+    name: 'Statistics',
     components:{
-        Sidebar
+    Sidebar 
     }
 }
 </script>

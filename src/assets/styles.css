@@ -1,4 +1,7 @@
-/* LOGIN PAGE  */
+*{
+    margin: 0;
+    padding: 0;
+}
 .logo {
     width: 35%;
     height: auto;
@@ -15,8 +18,8 @@
     border: 1px solid skyblue;
   }
   
-  .buttonLogin {
-    width: 320px;
+  .buttonLogin, .buttonSignUp, .buttonAddTask {
+    width: 100px;
     height: 40px;
     border: 1px solid skyblue;
     background-color: skyblue;
@@ -26,11 +29,11 @@
     transition: background-color 1s;
   }
   
-  .buttonLogin:hover {
+  
+  .buttonLogin:hover, .buttonSignUp:hover, .buttonAddTask:hover {
     background-color: rgb(28, 85, 107);
   }
 
-  /* Sign Up  */
   .SignUp input {
     width: 300px;
     height: 40px;
@@ -41,23 +44,7 @@
     margin-left: auto;
     border: 1px solid skyblue;
   }
-  
-  .buttonSignUp {
-    width: 320px;
-    height: 40px;
-    border: 1px solid skyblue;
-    background-color: skyblue;
-    color: #fff;
-    font-size: large;
-    cursor: pointer;
-    transition: background-color 1s;
-  }
-  
-  .buttonSignUp:hover {
-    background-color: rgb(28, 85, 107);
-  }
 
-  /* Nav (header) */
   .nav{
     background-color: skyblue;
     overflow: hidden;
